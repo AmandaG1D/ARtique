@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ARtique</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="hero-banner">
+    <div class="hero-content">
+      <img src="images/Adobe Express - file.png" alt="ARtique Logo" class="hero-logo" />
+    </div>
+  </div>
+
+  <div class="header-wrapper">
+    <header>
+      <img src="images/LeafIcon.png" alt="Leaf Icon" class="header-icon" />
+      <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul id="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <div class="container">
+    <h1>Behind The Design</h1>
+
+    <!-- Carousel Section with Smaller Size -->
+    <div class="carousel-container carousel-small">
+      <div class="carousel">
+        <img src="images/image-front.png" alt="Front View" class="carousel-image active" />
+        <img src="images/image-back.png" alt="Back View" class="carousel-image" />
+        <img src="images/image-side.png" alt="Side View" class="carousel-image" />
+      </div>
+      <div class="carousel-buttons">
+        <button onclick="prevImage()">❮</button>
+        <button onclick="nextImage()">❯</button>
+      </div>
+    </div>
+
+    <p><strong>Product Name:</strong> Medium Blue Wash Denim Jeans</p>
+    <p><strong>Fabric Composition:</strong> 100% Organic Cotton</p>
+    <p><strong>Manufacturing Process:</strong> Ethically crafted using water-efficient dyeing techniques and fair-trade labor.</p>
+    <p><strong>C02 Lifetime:</strong> 33.4 kg 💨</p> 
+    <p><strong>Water:</strong> 3781 litres 💧</p>
+    <p><strong>Fabric Usage:</strong> 1.6m 🧶</p>
+    <p><strong>Style:</strong> A cute, slim fit stretchy pair of denim jeans with a medium blue wash and straight leg fit.</p>
+    <p><strong>Sustainability Level:</strong> 🌱🌱🌱🌱 (High) – Made with eco-friendly materials and responsible production methods.</p>
+
+    <h2>Rate this garment:</h2>
+    <div class="rating">
+      <input type="radio" name="star" id="star5" value="5"><label for="star5">★</label>
+      <input type="radio" name="star" id="star4" value="4"><label for="star4">★</label>
+      <input type="radio" name="star" id="star3" value="3"><label for="star3">★</label>
+      <input type="radio" name="star" id="star2" value="2"><label for="star2">★</label>
+      <input type="radio" name="star" id="star1" value="1"><label for="star1">★</label>
+    </div>
+
+    <h2>Leave a Comment:</h2>
+    <input type="text" id="username" placeholder="Enter your name (optional)" /><br><br>
+    <textarea id="commentText" rows="4" cols="50" placeholder="Write your comment here..."></textarea><br>
+    <button onclick="submitComment()">Submit</button>
+
+    <div id="comments"></div>
+
+    <h2>Try it On Before You Buy!</h2>
+    <button onclick="openARExperience()">Try in AR</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
